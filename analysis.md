@@ -1,1 +1,9 @@
-A linked-list stack pushes and pops at the head rather than the tail to maintain an $O(1)$ time complexity. If operations were performed at the tail of a singly linked list, each push or pop would require traversing the entire list to update the final pointer, resulting in $O(n)$ time complexity. Meanwhile, an array queue must be circular to efficiently reuse memory; as elements are dequeued from the front, those slots become empty. By wrapping the rear and front indices around using the modulo operator, the queue avoids wasting space and eliminates the need to shift all remaining elements to the left (which would otherwise degrade performance to $O(n)$).
+A linked-list stack pushes and pops at the head rather than the tail to maintain an $O(1)$ time complexity. 
+If operations were performed at the tail of a singly linked list, 
+each push or pop would require traversing the entire list to update the final pointer, 
+resulting in $O(n)$ time complexity. Meanwhile, 
+an array queue must be circular to efficiently reuse memory; 
+as elements are dequeued from the front, those slots become empty. 
+By wrapping the rear and front indices around using the modulo operator, 
+the queue avoids wasting space and eliminates the need to shift all remaining elements to the left 
+(which would otherwise degrade performance to $O(n)$).
